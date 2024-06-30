@@ -1,0 +1,1 @@
+This project was done with two other seniors at my university. I present here the writeup that we had to turn in to get credit for our project. In essence, we were concerned with using deep learning to predict stellar parameters of eclipsing binary star systems given radial velocities and light curves.
