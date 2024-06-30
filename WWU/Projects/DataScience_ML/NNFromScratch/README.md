@@ -1,2 +1,1 @@
-# 202310_data371_chandln
-DATA 371 Winter 2023 (chandln)
+This project concerns the development of a feed forward neural network in python for both classification and regression. It is built using NumPy that way the developer (me) is forced to understand how the matrix multiplication in a neural network works.
