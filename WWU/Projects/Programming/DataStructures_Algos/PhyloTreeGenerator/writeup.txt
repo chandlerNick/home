@@ -1,0 +1,10 @@
+1. Nick Chandler & Dylan Kleven
+2. The program will run but it is not very fast. We think that have encountered most of the bugs that were present.
+3. The Printing methods and the get evoloutionary distance methods are relatively slow. It seems that the build tree is relatively quick.
+4. We found that the coordination of our schedules was challenging because we have different committments at different times. Finding the root cause of bugs was challenging at times. The hardest methods were the get weighted height and the get evolutionary distance. 
+5. We created three test cases. 
+test1.ref.fasta tested for what happens on a gibberish file -- It returns the base cases for each method and not printed string.
+test2.ref.fasta tested for the case where the input is empty. -- We caught the exception in the file processing method.
+test3.ref.fasta checked for a alteration of the input peptide sequence -- The Species class has a catch which was triggered. 
+6. Ours can run but it is not necessarily asymptotically efficient. However we were not given a specification of asymptotic efficiency for any of the methods which made it unclear to optimize.
+

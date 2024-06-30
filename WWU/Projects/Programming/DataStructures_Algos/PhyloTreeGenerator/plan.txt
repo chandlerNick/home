@@ -1,0 +1,5 @@
+1. Nick Chandler & Dylan Kleven
+2. This program has us create a tree which houses different species. Then we have to create a variety of helper methods that output data and alter the state of the tree. A large portion of the tree is the algorithm which determines distance between species.
+3. M: 8-10pm, T: 2pm, W: 6-8, Th: 3pm, F: 4pm-10pm, Su: 10am - 2pm/ Alternates Su: 6-10pm
+4. Building the tree seems to be the most challenging. Debugging as well, that always causes some issues. Testing may also be challenging.
+5.TA's, Office hours, Our partners, YouTube.
