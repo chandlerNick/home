@@ -1,0 +1,1 @@
+This project was done with 3 other group members though I took the role of team leader. In short, the project is concerned with the analysis of a real estate dataset where we experimented with various multivariate statistical techniques to predict home price given other attributes.
