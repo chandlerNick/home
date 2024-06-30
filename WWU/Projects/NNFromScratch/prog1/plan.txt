@@ -1,0 +1,16 @@
+1. The program asks us to implement a couple variations of neural networks with different characteristics using numpy. Specifically, we must implement a 2-layer neural network and a deep neural network with classification/regression capabilities and minibatch gradient descent training for each. There are also 14 arguments to specify the working of the program which we must also take into consideration while designing and programming. Finally, we are not to use any machine learning libraries which do the tasks for us so that we can understand with more detail how neural networks function.
+
+2. I anticipate implementing the 14 command line arguments to be challenging. Specifically, seeing where to change the program based on the argument input. I also think re-learning python will be potentially challenging. Though these are both potential challenges, they may be easier than I expect.
+
+3. My current plan for working on the assignment (subject to change) is:
+	Sunday - 2 hours before 7pm
+	M - 2pm - 3pm
+	Tu - 3pm - 5pm
+	W - 10:30am - 2pm
+	Th - 4pm - 5pm
+	Until completion.
+
+4. The resources I plan to draw on should I get stuck are:
+	1. My professor
+	2. Google
+	3. Friends

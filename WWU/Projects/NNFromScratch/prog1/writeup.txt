@@ -1,0 +1,25 @@
+1. Nick Chandler
+
+2. I think all features were implemented (I tried {pure, MB}, {0, 1, n layers}, {Classification, Regression}, {1 to many output dimension}). That said, there are occasional underflow errors for which I don't know the cause (they occur in the computeOneA function). I also notice that the values output are sometimes very strange but I think this may be due to certain combinations of hyper-parameters eliciting poor outputs. I did rigorously check the math behind my model and that the program does this math as intended but I may have missed something (or a few things). Also, please note that I did not use the convention of W^T x + b for matrix multiplications but Wx + b. This simply changes the transposes of various things in the backprop algorithm but I wrote out each equation that would be affected and its proper change before implementing.
+
+3. The thing that irks me about the testing which I did is that the error reporting is a bit strange. Sometimes it converges to unexpected values or oscillates between several values. This could be due to the hyper-parameters which I selected in training though I am not certain. Another error I encountered in testing (but should be handled) is the fact that occasionally there are underflows in the weight matrices. I believe this is due to the random initialization of weights but am not certain. I am (of course) not fully confident that the program functions in all cases but I did try 24 different combinations of {pure, MB}, {0, 1, n layers}, {Classification, Regression}, & {1-dim, n-dim output} and during my testing it did not have any problems with these. That said, there could be problems that slipped through the cracks. Given more time, I would find a dataset that I know the trend to, find the "ideal" model to capture the trend in this data, and examine the step by step training process in comparison to my model to see how they differ. From this I may be able to get more insight into why my model performs the way it does. Technical note, if the program unexpectedly exits, a different combination of hyper parameters may help. (smaller learning rate/initialization range ideally)
+
+4. To test, I created a bash script to go through the "big" hyper-parameters. Specifically, those which affect the matrix multiplication and backprop methods. Enumerating the different combinations, I tried: different combinations of {pure, MB}, {0, 1, n layers}, {Classification, Regression}, & {1-dim, n-dim output} which gives us 3*2*2*2 = 24. I also tried full batch training for several of the other combinations. I also examined the weight matrices after each update step to make sure that they were actually changing.
+
+5. The most challenging aspect of this assignment was implementing backprop in tandem with feedforward, specifically, getting everything to fit together nicely. Also, using numpy presented some challenges. I actually "made" the whole program and got it to print to output but decided that it would be much nicer to scrap the majority of this and redo it rigorously since I felt that I cut corners in the creation of it. Numpy presented its own challenges, specifically, the fact that we interpret vectors and matrices in column major order on paper but numpy defaults to row major order.
+
+6. Minibatching did speed up some aspects of training but pure SGD (MB size == 1) made it significantly slower. Some times are as follows:
+With 1000 epochs and dataset2 on a model with no hidden layers:
+pureSGD: 3.31s
+MBSGD (MB = 16): < 1s
+Full batch: < 1s
+
+With 1000 epochs and dataset2 on a model with 5 hidden layers and 5 hidden units:
+pureSGD: 14.16s
+MBSGD (MB = 16): 5.33s
+Full Batch: 11.52s
+
+As we see in just a couple trials minibatch sgd performs much better than the other options with pure sgd being the worst. The convergence values were the same to 3 decimal places throughout each of the trials.
+
+
+7. Deeper training models did help with development set accuracy on some datasets but of course took a lot longer to train.
