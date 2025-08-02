@@ -1,4 +1,6 @@
-# NOTE: This repo is no longer updated. Check my website, linked-in, or github profile for up to date information.
+# NOTE: This repo is no longer updated. 
+
+### Check my website, linked-in, or github profile for up to date information.
 
 # home
 This is the GitHub landing page for anyone finding me on the internet.
