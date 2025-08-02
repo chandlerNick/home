@@ -1,3 +1,5 @@
+# NOTE: This repo is no longer updated. Check my website, linked-in, or github profile for up to date information.
+
 # home
 This is the GitHub landing page for anyone finding me on the internet.
 
@@ -8,5 +10,4 @@ I am an aspiring technology professional and have just obtained a Bachelor's of 
 Website: https://chandlerNick.github.io
 
 LinkedIn: https://www.linkedin.com/in/chandler-nick
-
 
